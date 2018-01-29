@@ -16,8 +16,8 @@ Outputs: steering_matrix_A -- Matrix of size: a x b.
 
 Observations:
 
-d is considered the model order.
-Delta = lambda/2. Space between each sensors is equal to half of the wavelength of the signal.
+d refers to the model order.
+Delta = lambda/2. The space between each sensors is equal to half of the wavelength of the signal.
 
 %} 
 
@@ -25,12 +25,12 @@ Delta = lambda/2. Space between each sensors is equal to half of the wavelength 
 
 M1 = size_A(1,1);
 M2 = size_B(1,1);
-d = size_A(1,2); % Must be also equal to size_B(1,2); 
+d = size_A(1,2); % Must be also equal to size_B(1,2);.
 
 %% Generation of random angles of arrival for azimuth and elevation. 
 
 k1 = rand(d,1); 
-azimuths = (k1.*pi) - (pi/2); % Limited from: -pi/2 to pi/2;
+azimuths = (k1.*pi) - (pi/2); % Limited from: -pi/2 to pi/2.
 
 k2 = rand(d,1);
 elevations = (k2.*pi) - (pi/2);
